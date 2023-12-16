@@ -1,0 +1,109 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+
+    <ul>
+        <form action="about">
+            <input type="submit"value="ABOUT DIABETES">
+        </form>
+    </ul>
+
+    <style type= text/css>
+        div{
+            color:black;
+        }
+        h1{
+            color: 'white';
+            font-family: arial, sans-serif;
+            font-size: 40px;
+            font-weight: bold;
+            margin-top: 80px;
+        }
+        h2{
+            color: 'white';
+            font-family: arial, sans-serif;
+            font-size: 15px;
+            font-weight: bold;
+            margin-top: 400px;
+        }
+        ul form{
+            align-items: center;
+            display: inline-block;
+            padding:8px 12px;
+        }
+        ul form{
+            color:#f44336;
+            font-size:18px;
+            text-decoration:none;
+        }
+        ul form::after{
+            content:'';
+            width:0%;
+            height:2px;
+            background:#fff;
+            display:block;
+            margin:auto;
+            transition:0.5s;
+        }
+        ul form:hover::after{
+            width:100%;
+        }
+
+        body {
+            background-image: url("{% static 'DP\images\img1.jpg' %}");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        input[type=submit]{
+            background-color: #ef1111;
+            border: 2px;
+            color: white;
+            padding: 16px 32px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <div align="center">
+        <h1>
+            WELCOME TO DIABETES PREDICTION SYSTEM
+        </h1>
+        <form action="predict">
+            <input type="submit"value="LETS GET STARTED">
+        </form>
+        <style type= text/css>
+            div{
+            color:black;
+        }
+        form{
+            align-items: center;
+            display: inline-block;
+            padding:8px 12px;
+        }
+        form{
+            color:#f44336;
+            font-size:18px;
+            text-decoration:none;
+        }
+         form::after{
+            content:'';
+            width:0%;
+            height:2px;
+            background:#fff;
+            display:block;
+            margin:auto;
+            transition:0.5s;
+        }
+        form:hover::after{
+            width:100%;
+        }
+    </div>
+</body>
+</html>
